@@ -20,6 +20,11 @@ Run tests:
 deno test --allow-net
 ```
 
+## ⭐ Related
+
+- [sindresorhus/is-up](https://github.com/sindresorhus/is-up) is the Node.js project serving as inspiration for this one
+- [sindresorhus/is-up-cli](https://github.com/sindresorhus/is-up-cli) is the CLI for `is-up`
+
 ## 📄 License
 
 MIT © [Denorg](https://den.org.in)

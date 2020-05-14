@@ -1,23 +1,23 @@
-# 🏁 Deno Starter
+# 🔌 Up
 
-Simply recursively read a directory in Deno.
+Check if a website is up right now.
 
 ```ts
-import { mode } from "https://raw.githubusercontent.com/denorg/starter/master/mod.ts";
+import { isUp } from "https://raw.githubusercontent.com/denorg/up/master/mod.ts";
 
-const result = mode();
+const result = await isUp("https://google.com"); // true
 ```
 
 Required permissions:
 
-1. `--allow-read`
+1. `--allow-net`
 
 ## 👩‍💻 Development
 
 Run tests:
 
 ```bash
-deno test --allow-read
+deno test --allow-net
 ```
 
 ## 📄 License

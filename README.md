@@ -10,6 +10,24 @@ import { isUp } from "https://deno.land/x/up/mod.ts";
 const result = await isUp("https://google.com"); // true
 ```
 
+Alternatively, you can use it directly from the CLI:
+
+```bash
+deno run --allow-net https://deno.land/x/up/mod.ts https://google.com
+```
+
+You can also install it globally using the following:
+
+```bash
+deno install --allow-net -n up https://deno.land/x/up/mod.ts
+```
+
+Then, the package is available to run:
+
+```bash
+up https://google.com # Result: https://google.com is up
+```
+
 Required permissions:
 
 1. `--allow-net`

@@ -2,6 +2,8 @@
 
 Check if a website is up right now.
 
+[![Test CI](https://github.com/denorg/up/workflows/Test%20CI/badge.svg)](https://github.com/denorg/up/actions)
+
 ```ts
 import { isUp } from "https://raw.githubusercontent.com/denorg/up/master/mod.ts";
 

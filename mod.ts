@@ -1,6 +1,6 @@
 /** Check if a website is up */
 export async function isUp(url: string): Promise<boolean> {
-  const hostname = encodeURIComponent((new URL(url)).hostname);
+  const host = encodeURIComponent((new URL(url)).host);
   const result: {
     "domain": string;
     "port": number;
@@ -8,7 +8,7 @@ export async function isUp(url: string): Promise<boolean> {
     "response_ip": string;
     "response_code": number;
     "response_time": number;
-  } = await (await fetch(`https://isitup.org/${hostname}.json`))
+  } = await (await fetch(`https://isitup.org/${host}.json`))
     .json();
   return result.status_code === 1;
 }
